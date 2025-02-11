@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left-column {
+            flex: 1;
+            background-color: #b12a2a77;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .right-column {
+            flex: 1;
+            background-color: #3921c226;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>
+        <h1 style="text-align: center;">My Newspaper</h1>
+    </h1>
+
+    <div class="main-content">
+        <div class="left-column">
+            <article>
+                <h2>Main Article 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat urna eget elit tincidunt, ut vehicula magna euismod.</p>
+            </article>
+            <article>
+                <h2>Main Article 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat urna eget elit tincidunt, ut vehicula magna euismod.</p>
+            </article>
+        </div>
+
+        <div class="right-column">
+            <article>
+                <h3>Side Article 1</h3>
+                <p>Curabitur pretium purus ac ante vehicula, id condimentum urna consectetur.</p>
+            </article>
+            <article>
+                <h3>Side Article 2</h3>
+                <p>Donec convallis felis non tortor aliquet, vel sollicitudin erat gravida.</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Newspaper. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
