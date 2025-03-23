@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background-color: black;
+             */
+        background: rgb(80, 89, 134);
+        background: radial-gradient(
+          circle,
+          rgba(80, 89, 134, 1) 0%,
+          rgba(19, 52, 181, 0.7455357142857143) 76%,
+          rgba(252, 70, 107, 1) 86%
+        );
+        color: white;
+      }
+      .root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 5rem;
+      }
+
+      .root div {
+        margin-left: 3rem;
+      }
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 5rem;
+        text-align: center;
+      }
+      .child {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Summer Olympics 2028 Timer</h1>
+    <div class="root">
+      <div class="child">
+        <div id="day"></div>
+        <div>Days</div>
+      </div>
+
+      <div class="child">
+        <div id="hour"></div>
+        <div>Hour</div>
+      </div>
+      <div class="child">
+        <div id="minute"></div>
+        <div>Minute</div>
+      </div>
+      <div class="child">
+        <div id="second"></div>
+        <div>Second</div>
+      </div>
+    </div>
+    <script src="./proj2.js"></script>
+  </body>
+</html>
